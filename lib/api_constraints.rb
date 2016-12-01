@@ -2,8 +2,8 @@ class ApiConstraints
   attr_reader :version
 
     def initialize(options)
-      @version = options.fetch(:version)
-      @default = options.fetch(:default)
+      @version = options[:version]
+      @default = options[:default]
     end
 
     def matches?(request)
